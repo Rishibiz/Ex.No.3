@@ -4,7 +4,7 @@
 To create a Repository
 
 # Procedure:
-1. Crea ng a group 
+1. Creating a group 
 The first line [root@serverb ~]# groupadd admin creates a new group named 
 admin. A group is a collec on of users that can share certain permissions. The root user is the 
 system administrator and has the authority to create groups. 
@@ -16,7 +16,7 @@ The next three lines [root@serverb ~]# useradd -G admin harry,
 natasha, and sarah. The useradd command is used to create new user accounts. The -G 
 admin op on adds the new user to the admin group that was previously created. 
 
-3. Se ng a restricted shell for a user 
+3. Seeing a restricted shell for a user 
 The line [root@serverb ~]# useradd -s /sbin/nologin sarah creates a 
 new user account named sarah. However, the -s /sbin/nologin op on specifies that the 
 user's shell is set to /sbin/nologin. This is a special shell that restricts the user from logging 
